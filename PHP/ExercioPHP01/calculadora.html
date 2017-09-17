@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+	<stile type="text/css"></style>
+	<script language=javascript type="text/javascript" src="calculadora.js"></script>
+	<link href="calculadora.css" rel="stylesheet" type="text/css"></link>
+
+</head>
+<body>
+	<TABLE>
+		<TR>
+			<TD>     
+				<form name="frmCalc" action="calc1.php" method="get" onsubmit= "return validar()">
+					<fieldset>
+					<legend>Calculadora</legend>			
+						
+		
+							<INPUT TYPE="RADIO" name="opcao"  id="op1" VALUE="op1"> Soma <br>
+							<INPUT TYPE="RADIO" name="opcao"  id="op2" VALUE="op2"> Subtração <br>	
+							<INPUT TYPE="RADIO" name="opcao"  id="op3" VALUE="op3"> Multiplicação <br>
+							<INPUT TYPE="RADIO" name="opcao"  id="op4" VALUE="op4"> Divisão <br> 					
+						
+					
+						
+							<label for="numero1"></label>
+							<input type="text" name="numero1" value="" id="numero1"  maxlength="10" size="4" /> por
+							<label for="numero2"></label>
+							<input type="text" name="numero2" value="" id="numero2"  maxlength="10" size="4" />
+												
+						
+						
+							<input type="submit" nome="enviar" value="Enviar">
+						
+					</fieldset>	
+				</form>	
+			</td>
+		</tr>
+	</TABLE>
+</body>
+</html>
+

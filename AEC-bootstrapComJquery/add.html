@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Template Bootstrap</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">exot
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<!--NAV BAR MENU SUPERIOR PRINCIPAL-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		 <div class="container-fluid">
+		  <div class="navbar-header">
+		   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		   </button>
+		   <a class="navbar-brand" href="#">Site Guilherme</a>
+		  </div>
+		  <div id="navbar" class="navbar-collapse collapse">
+		   <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Início</a></li>
+			<li><a href="#">Opções</a></li>
+			<li><a href="#">Perfil</a></li>
+			<li><a href="#">Ajuda</a></li>
+		   </ul>
+		  </div>
+		 </div>
+</nav>
+
+	
+	<!-- CONTAINER PRINCIPAL MAIN-->
+	<div id="main" class="container-fluid">
+		<h3 class="page-header">Cadastro</h3>
+	 	<form action="index.html">
+			
+			<!-- DADOS DE NOME -->
+			<div class="row">
+				<div class="form-group col-md-5">
+					<label for="nome">Nome</label>
+					<input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+				</div>
+			
+
+			 	<div class="form-group col-md-5">
+			 		<label for="sobrenome">Sobrenome</label>
+			  		<input type="text" class="form-control" id="sobrenome" placeholder="Sobre nome">
+				 </div>
+
+				<div class="form-group col-md-2">
+			 		<label for="idade">Idade</label>
+			 		<input type="number" class="form-control" id="idade" placeholder="Idade">
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<!-- DADOS DE ENDEREÇO -->
+			<div class="row">
+				<div class="form-group col-md-4">
+					<label for="rua">Rua</label>
+					<input type="text" class="form-control" id="rua" placeholder="Digite a Rua">
+				</div>
+			
+
+			 	<div class="form-group col-md-4">
+			 		<label for="bairro">bairro</label>
+			  		<input type="text" class="form-control" id="bairro" placeholder="Digite o Bairro">
+				 </div>
+
+				<div class="form-group col-md-3">
+			 		<label for="cidade">Cidade</label>
+			 		<input type="number" class="form-control" id="cidade" placeholder="Cidade">
+				</div>
+				
+				<div class="form-group col-md-1">
+			 		<label for="numero">Número</label>
+			 		<input type="number" class="form-control" id="numero">
+				</div>
+			</div>	
+			
+			<hr/>
+			
+			<!-- DADOS DOS PAIS -->
+			<div class="row">
+				<div class="form-group col-md-4">
+					<label for="nomeDoPai">Nome do Pai</label>
+					<input type="text" class="form-control" id="nomeDoPai" placeholder="Nome do Pai">
+				</div>			
+
+			 	<div class="form-group col-md-4">
+			 		<label for="nomeDaMae">Nome da Mae</label>
+			  		<input type="text" class="form-control" id="nomeDaMae" placeholder="Nome da Mãe">
+				 </div>
+
+				<div class="form-group col-md-4">
+			 		<label for="comentarios">Algum Comentario</label>
+			  		<input type="text" class="form-control" id="comentario" placeholder="Diga Algo">
+				 </div>
+			</div>
+	<hr/>
+			<div id="actions" class="row">
+				<div class="col-md-12">
+					<button type="submit" class="btn btn-primary">Salvar</button>
+					<a href="index.html" class="btn btn-default">Cancelar</a>
+				</div>
+			</div>
+	</form>
+	</div>
+
+  <!-- jQuery (necessario para os plugins Javascript do Bootstrap) -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

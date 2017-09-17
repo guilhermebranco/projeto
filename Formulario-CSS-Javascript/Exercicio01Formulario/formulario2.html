@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>    
+	<title>Cadastro de Funcionários</title>    
+	<meta charset="utf-8">    
+	<stile type="text/css"></style>
+	<link rel="stylesheet" href="arquivo.css">
+	
+
+<script language="javascript" src="codigo.js"></script>
+
+</head>  
+<body>
+
+<TABLE>
+<TR width=50% height=50%>
+<TD>
+
+   <h1>Guilherme</h1>
+    
+    <form name="frm" action="funcionario.php" method="get" onSubmit="javascrip: return validar()">
+
+	<fieldset>
+	<legend>Cadastro</legend>
+
+    
+		<label for="nome">Nome:</label>
+		<input type="text" name="nome" value="" id="nome" maxlength="40"/><br>
+
+		<label for="email">Email:</label>
+		<input type="text" name="email" value="" id="email"/><br>
+
+		
+		<label for="nome">sexo:</label> 
+		<INPUT TYPE="RADIO" name="opcao"  id="sexoM" VALUE="M"> Masculino 	
+		<INPUT TYPE="RADIO" name="opcao"  id="sexoF" VALUE="F"> Feminino 
+		<br>
+
+		Profissão: 
+		<select name="profissão">
+  
+			<option value="Contador">Contador</option> 
+  			<option value="Engenheiro">Engenheiro(a)</option>  	
+			<option value="Mecanico">Mecanico(a)</option>  
+			<option value="Médico">Médico(a)</option>  
+			<option value="Advogado">Advogado(a)</option>  
+			<option value="Professor">Professor(a)</option> 
+ 			<option value="Outro">Outro</option>
+
+		</select><br>
+		
+		Sobre Voce: 
+		<br>
+		<textarea rows="10" cols="40" name="sobre" id="sobre" value=""/>
+		</textarea>  <br>		
+
+		<INPUT TYPE="checkbox" name="concordo"  id="concordo" VALUE="" > Concordo com a política de uso.<br> 			
+
+		<input type="submit" nome="btnenviar" value="Enviar" onclick="javascript: validar();"/>	
+
+
+	</fieldset>	
+	</form>
+
+	
+<td>
+<tr>
+</TABLE>
+
+</body>
+
+</html>
